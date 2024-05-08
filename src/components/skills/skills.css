@@ -1,0 +1,113 @@
+#skills {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  margin: 0 auto;
+  background-color: #7b64fc28;
+}
+
+.skills-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin: 1rem auto 1.5rem;
+  text-align: center;
+}
+
+.skills-description {
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  max-width: 50rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  /* text-align: center; */
+  color: #c7c7c7;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 1rem 0;
+  width: 90%;
+  max-width: 60rem;
+}
+.skill-category {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  max-width: 45rem;
+  width: 100%;
+  column-gap: 3rem;
+  background-color: #f929fd1f;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+
+.skill-category-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 0.5rem;
+}
+
+.skill-category-details {
+  padding: 0 1rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+.skill-category-details h4 {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+.skill-category-details ul {
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  color: #d6d6d6;
+  /* list-style-image: url('https://png.pngtree.com/element_our/png/20181013/code-icon-design-vector-png_125856.jpg'); */
+  list-style: circle;
+}
+.skill-category-details ul li {
+  margin-bottom: 0.1rem;
+  padding: 0.1rem;
+}
+
+@media screen and (max-width:720px) {
+  .skills-heading {
+    font-size: 2rem;
+  }
+  .skills-description {
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+  }
+}
+@media screen and (max-width:490px) {
+  .skills-heading {
+    font-size: 1.7rem;
+  }
+  .skills-description {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width:375px) {
+  .skills-heading {
+    font-size: 1.35rem;
+  }
+  .skills-description {
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+}
