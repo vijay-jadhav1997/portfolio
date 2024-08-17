@@ -1,7 +1,7 @@
 import {Link}  from 'react-scroll';
 import { PiHandbagSimpleFill } from "react-icons/pi";
 import profImg from '../../assets/vj-bg.png'
-import './intro.css'
+import './Intro.css'
 
 
 function Intro() {
@@ -22,6 +22,23 @@ function Intro() {
         </Link>
       </div>
       <img className='bg-img' src={profImg} alt="Profile background Image" />
+      <div className="bubbles-wrapper">
+        <span className="bubble" style='--bubble:1'></span>
+        <span className="bubble" style='--bubble:12'></span>
+        <span className="bubble" style='--bubble:16'></span>
+        <span className="bubble" style='--bubble:5'></span>
+        <span className="bubble" style='--bubble:20'></span>
+        <span className="bubble" style='--bubble:25'></span>
+        <span className="bubble" style='--bubble:13'></span>
+        <span className="bubble" style='--bubble:17'></span>
+        <span className="bubble" style='--bubble:11'></span>
+        <span className="bubble" style='--bubble:13'></span>
+        <span className="bubble" style='--bubble:19'></span>
+        <span className="bubble" style='--bubble:9'></span>
+        <span className="bubble" style='--bubble:21'></span>
+        <span className="bubble" style='--bubble:24'></span>
+        <span className="bubble" style='--bubble:15'></span>
+      </div>
     </section>
   )
 }

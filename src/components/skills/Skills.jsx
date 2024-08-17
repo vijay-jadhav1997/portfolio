@@ -1,4 +1,4 @@
-import './skills.css';
+import './Skills.css';
 import frontend from '../../assets/frontend_tech.png';
 import jsLibraries from '../../assets/react_redux.png';
 import backend from '../../assets/backend.png';
