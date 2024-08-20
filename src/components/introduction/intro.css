@@ -64,6 +64,56 @@
   font-size: 1.75rem;
 }
 
+
+.bubbles-wrapper {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-items: flex-end; */
+  gap: 1rem;
+  /* overflow: hidden; */
+  /* height: 100dvh;
+  width: 100dvw; */
+  inset: 0;
+}
+
+.bubbles-wrapper span {
+  height: 1.2rem ;
+  width: 1.2rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 5px darkcyan, 
+  0 0 5px 2px darkcyan, 
+  0 0 25px #008b8bb8,
+  0 0 50px #008b8bb8, 0 0 10px 5px white;
+  animation: bubble-anime 2 linear forwards;
+  animation-duration: calc(120s/var(--bubble));
+}
+
+.bubbles-wrapper span:nth-child(even) {
+  box-shadow: inset 0 0 5px #f00b8d, 
+  0 0 5px 2px #f00b8d, 
+  0 0 25px #f00b8d,
+  0 0 50px #f00b8d, 0 0 10px 5px white;
+}
+.bubbles-wrapper span:nth-child(3n) {
+  box-shadow: inset 0 0 5px #d5f00b, 
+  0 0 5px 2px #d5f00b, 
+  0 0 25px #d5f00b,
+  0 0 50px #d5f00b, 0 0 10px 5px white;
+}
+
+@keyframes bubble-anime {
+  0% {
+    transform: translateY(100vh) scale(0.2);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.1) ;
+  }
+}
+
+
+
 @media screen and (max-width:500px) {
   .bg-img {
     top: -0.5rem;
