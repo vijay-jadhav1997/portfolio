@@ -10,7 +10,7 @@ const Skills = () => {
     <section id='skills' className="skills">
       <h2 className='skills-heading'>My Web Development Skills</h2>
       <p className='skills-description'>Passionate about coding and web development, I thrive on exploring new technologies and AI tools.  For me, coding is not just a career path – it is a lifelong pursuit fueled by curiosity, innovation, and a love for problem-solving.</p>
-
+      
       <div className="skills-wrapper">
         <div className="skill-category">
           <img className="skill-category-img" src={frontend} alt="Image depicting logos of frontend technologies" />
@@ -21,7 +21,7 @@ const Skills = () => {
               <li>CSS3</li>
               <li>JavaScript</li>
               <li>Tailwind CSS</li>
-              <li>Bootstrap</li>
+              {/* <li>Bootstrap</li> */}
             </ul>
           </div>
         </div>
@@ -33,6 +33,7 @@ const Skills = () => {
             <ul>
               <li>React.js</li>
               <li>Redux.js</li>
+              <li>React-router-dom</li>
             </ul>
           </div>
         </div>
@@ -69,6 +70,19 @@ const Skills = () => {
             <h4>API Development</h4>
             <ul>
               <li>RestAPI</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="skill-category">
+          <img className="skill-category-img" src={restApi} alt="Image depicting logos of API development technologies" />
+          <div className="skill-category-details">
+            <h4>Other</h4>
+            <ul>
+              <li>npm</li>
+              <li>vs code</li>
+              <li>Vite</li>
+              <li>Parcel</li>
             </ul>
           </div>
         </div>

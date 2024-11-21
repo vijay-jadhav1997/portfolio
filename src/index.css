@@ -9,6 +9,13 @@
   font-family: Arial, sans-serif;
 }
 
+html {
+  scrollbar-width: thin;
+  /* scroll-behavior: smooth; */
+  scrollbar-color: #7477a8;
+  scrollbar-base-color: goldenrod;
+}
+
 body {
   margin: 0;
   min-width: 320px;

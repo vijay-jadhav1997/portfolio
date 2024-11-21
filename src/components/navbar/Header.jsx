@@ -6,13 +6,13 @@ import {Link} from 'react-scroll';
 
 const Header = () => {
   return (
-    <nav className='navbar'>
+    <header className='header'>
       <img className='logo' src={logo} alt="logo" />
       <nav className="nav-menu">
         <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={700} className='nav-menu-item'>Home</Link>
-        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-30} duration={700} className='nav-menu-item'>About</Link>
+        {/* <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-30} duration={700} className='nav-menu-item'>About</Link> */}
         <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-100} duration={700} className='nav-menu-item'>Projects</Link>
-        <Link activeClass='active' to='portfolio' spy={true} smooth={true} offset={-100} duration={700} className='nav-menu-item'>Portfolio</Link>
+        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={700} className='nav-menu-item'>Skills</Link>
       </nav>
       <img className='humburger-menu-icon' src={menuIcon} alt="Humbuer menu image" />
       <button className="contactBtn"
@@ -23,7 +23,7 @@ const Header = () => {
         <img src={contactImg} alt="contact Image" className="contactBtn-img" />
         Contact Me
       </button>
-    </nav>
+    </header>
   )
 }
 

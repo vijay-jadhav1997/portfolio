@@ -1,0 +1,26 @@
+#contact {
+  max-width: 50rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: #062f5e3c;
+  /* background-color: #131524; */
+  display: flex;
+  justify-content: center;
+}
+
+.form-wrapper {
+  max-width: 25rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: #eaa1d929;
+  backdrop-filter: blur(20px);
+  display: flex;
+  row-gap: 1rem;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+form .input-box {
+  width: max-content;
+}

@@ -22,7 +22,7 @@ function Intro() {
         </Link>
       </div>
       <img className='bg-img' src={profImg} alt="Profile background Image" />
-      <div className="bubbles-wrapper">
+      {/* <div className="bubbles-wrapper">
         <span className="bubble" style={{'--bubble':10}}></span>
         <span className="bubble" style={{'--bubble':12}}></span>
         <span className="bubble" style={{'--bubble':16}}></span>
@@ -39,7 +39,7 @@ function Intro() {
         <span className="bubble" style={{'--bubble':12}}></span>
         <span className="bubble" style={{'--bubble':22}}></span>
         <span className="bubble" style={{'--bubble':15}}></span>
-      </div>
+      </div> */}
     </section>
   )
 }
