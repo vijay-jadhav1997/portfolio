@@ -11,14 +11,12 @@
 
 html {
   scrollbar-width: thin;
-  /* scroll-behavior: smooth; */
   scrollbar-color: #7477a8;
   scrollbar-base-color: goldenrod;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
+  min-width: 315px;
   min-height: 100vh;
   background-color: #020537;
   color: #d3d3d3;

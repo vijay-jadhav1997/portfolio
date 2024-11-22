@@ -1,6 +1,6 @@
 .header {
   height: 5rem;
-  width: 100vw;
+  width: 100%;
   max-width: 75rem;
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -62,10 +62,12 @@
   cursor: pointer;
 }
 
+
 .contactBtn:hover {
   transform: scale(0.99);
   background-color: #ebebeb;
 }
+
 
 .contactBtn-img {
   object-fit: cover;
@@ -82,7 +84,7 @@
 
 @media screen and (max-width:632px) {
   .header {
-    height: 4.5rem;
+    height: 4rem;
     padding: 0.75rem 2rem;
   }
   
@@ -106,3 +108,16 @@
     border-radius: 1.75rem;
   }
 }
+
+/* @media  screen and (max-width: 425px) {
+  .contactBtn-img {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .contactBtn {
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 12px;
+  }
+} */

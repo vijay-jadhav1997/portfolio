@@ -1,5 +1,8 @@
 import {Link}  from 'react-scroll';
 import { PiHandbagSimpleFill } from "react-icons/pi";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter, FaCodepen } from "react-icons/fa6";
+// import { IoIosMail } from "react-icons/io";
 import profImg from '../../assets/vj-bg.png'
 import './Intro.css'
 
@@ -8,9 +11,9 @@ function Intro() {
   return (
     <section id='intro' className="intro">
       <div className="intro-details">
-        <span className="hello">Namaste/Hello, </span>
+        <span className="hello">Namaste, </span>
         <span className="intro-text">
-          I&apos;m 
+          I&apos;m
           <span className="intro-name">Vijay Jadhav</span><br />
           a full-stack developer
         </span>
@@ -20,26 +23,54 @@ function Intro() {
         <Link to=''>
           <button className='hireme-btn'><PiHandbagSimpleFill className='bag-icon' /> Hire me</button>
         </Link>
+        <div className="social-medias">
+          {/* <a href='#' target='_blank'>
+            <div className="button">
+              <FaGithu className='icon'b/>
+              </div>
+              <span>Email</span>
+            <div className="icon-wrapper">
+          </a> */}
+
+          <a href='#' target='_blank'>
+            <div className="button">
+              <div className="icon-wrapper">
+                <FaGithub className='icon' />
+              </div>
+              <span>Github</span>
+            </div>
+          </a>
+
+          <a href='#' target='_blank'>
+            <div className="button">
+              <div className="icon-wrapper">
+                <FaLinkedinIn className='icon' />
+              </div>
+              <span>LinkedIn</span>
+            </div>
+          </a>
+
+          <a href='#' target='_blank'>
+            <div className="button">
+              <div className="icon-wrapper">
+                <FaCodepen className='icon' />
+              </div>
+              <span>Codepen</span>
+            </div>
+          </a>
+
+          <a href='#' target='_blank'>
+            <div className="button">
+              <div className="icon-wrapper">
+                <FaXTwitter className='icon' />
+              </div>
+              <span>X (Twitter)</span>
+            </div>
+          </a>
+        </div>
       </div>
       <img className='bg-img' src={profImg} alt="Profile background Image" />
-      {/* <div className="bubbles-wrapper">
-        <span className="bubble" style={{'--bubble':10}}></span>
-        <span className="bubble" style={{'--bubble':12}}></span>
-        <span className="bubble" style={{'--bubble':16}}></span>
-        <span className="bubble" style={{'--bubble':19}}></span>
-        <span className="bubble" style={{'--bubble':11}}></span>
-        <span className="bubble" style={{'--bubble':20}}></span>
-        <span className="bubble" style={{'--bubble':13}}></span>
-        <span className="bubble" style={{'--bubble':17}}></span>
-        <span className="bubble" style={{'--bubble':11}}></span>
-        <span className="bubble" style={{'--bubble':18}}></span>
-        <span className="bubble" style={{'--bubble':15}}></span>
-        <span className="bubble" style={{'--bubble':10}}></span>
-        <span className="bubble" style={{'--bubble':22}}></span>
-        <span className="bubble" style={{'--bubble':12}}></span>
-        <span className="bubble" style={{'--bubble':22}}></span>
-        <span className="bubble" style={{'--bubble':15}}></span>
-      </div> */}
+      
     </section>
   )
 }

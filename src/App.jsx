@@ -4,7 +4,7 @@ import Skills from './components/skills/Skills'
 
 import './App.css'
 import ContactMe from './components/contact/ContactMe'
-import Footer from './components/footer/Footer'
+// import Footer from './components/footer/Footer'
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Intro/>
       <Skills/>
       <ContactMe/>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

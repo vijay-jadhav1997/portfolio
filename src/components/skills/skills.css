@@ -1,6 +1,6 @@
 #skills {
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   max-width: 75rem;
   display: flex;
   flex-direction: column;
@@ -48,9 +48,9 @@
   align-items: flex-start;
   max-width: 30rem;
   width: 100%;
-  column-gap: 2.5rem;
+  column-gap: 2rem;
   background-color: #f929fd1f;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0.75rem 2rem 1.5rem;
   border-radius: 1rem;
 }
 
