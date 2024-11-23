@@ -15,7 +15,7 @@ const Skills = () => {
         <div className="skill-category">
           <img className="skill-category-img" src={frontend} alt="Image depicting logos of frontend technologies" />
           <div className="skill-category-details">
-            <h4>Frontend Development</h4>
+            <h4>Frontend Technologies</h4>
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
@@ -42,12 +42,13 @@ const Skills = () => {
         <div className="skill-category">
           <img className="skill-category-img" src={backend} alt="Image depicting logos of backend technologies" />
           <div className="skill-category-details">
-            <h4>Backend Development</h4>
+            <h4>Backend Technologies</h4>
             <ul>
               <li>Python</li>
               <li>Django</li>
               <li>SQL</li>
               <li>PostgreSQL</li>
+              <li>Redis</li>
             </ul>
           </div>
         </div>
@@ -69,6 +70,7 @@ const Skills = () => {
           <div className="skill-category-details">
             <h4>API Development</h4>
             <ul>
+              <li>Django Rest Framework</li>
               <li>RestAPI</li>
             </ul>
           </div>

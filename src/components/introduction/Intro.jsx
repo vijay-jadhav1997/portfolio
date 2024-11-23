@@ -1,7 +1,7 @@
 import {Link}  from 'react-scroll';
 import { PiHandbagSimpleFill } from "react-icons/pi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter, FaCodepen } from "react-icons/fa6";
+import { FaXTwitter, FaCodepen, FaArrowDownLong } from "react-icons/fa6";
 // import { IoIosMail } from "react-icons/io";
 import profImg from '../../assets/vj-bg.png'
 import './Intro.css'
@@ -24,14 +24,6 @@ function Intro() {
           <button className='hireme-btn'><PiHandbagSimpleFill className='bag-icon' /> Hire me</button>
         </Link>
         <div className="social-medias">
-          {/* <a href='#' target='_blank'>
-            <div className="button">
-              <FaGithu className='icon'b/>
-              </div>
-              <span>Email</span>
-            <div className="icon-wrapper">
-          </a> */}
-
           <a href='https://github.com/vijay-jadhav1997' target='_blank'>
             <div className="button">
               <div className="icon-wrapper">
@@ -70,6 +62,13 @@ function Intro() {
         </div>
       </div>
       <img className='bg-img' src={profImg} alt="Profile background Image" />
+
+      <Link className='hireme-link' to='skills' spy={true} smooth={true} offset={-30} duration={700}>
+        <div className="pointer">
+          Latest Work
+          <FaArrowDownLong className='arrow' />
+        </div>
+      </Link>
       
     </section>
   )

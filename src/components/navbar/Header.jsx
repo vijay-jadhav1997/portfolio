@@ -1,7 +1,7 @@
 import './Header.css';
 import logo from '../../assets/logo.png';
 import contactImg from '../../assets/contactImg.png';
-import menuIcon from '../../assets/menu-icon.png';
+import { IoMenu } from "react-icons/io5";
 import {Link} from 'react-scroll';
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
         <img src={contactImg} alt="contact Image" className="contactBtn-img" />
         Contact Me
       </button>
-      <img className='humburger-menu-icon' src={menuIcon} alt="Humbuer menu image" />
+      <IoMenu className='humburger-menu-icon' />
     </header>
   )
 }
