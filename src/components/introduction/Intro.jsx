@@ -20,7 +20,7 @@ function Intro() {
         <p className="intro-para">
           I am an aspiring web developer with entry-level professional skills in Web development. As self-motivated and hardworking developer seeking an opportunity to work in a challenging environment to prove my programming skills and utilize my knowledge of web dev technologies for the growth of the organization.
         </p>
-        <Link to=''>
+        <Link className='hireme-link' to='contact' spy={true} smooth={true} offset={-50} duration={700}>
           <button className='hireme-btn'><PiHandbagSimpleFill className='bag-icon' /> Hire me</button>
         </Link>
         <div className="social-medias">
@@ -32,7 +32,7 @@ function Intro() {
             <div className="icon-wrapper">
           </a> */}
 
-          <a href='#' target='_blank'>
+          <a href='https://github.com/vijay-jadhav1997' target='_blank'>
             <div className="button">
               <div className="icon-wrapper">
                 <FaGithub className='icon' />
@@ -41,7 +41,7 @@ function Intro() {
             </div>
           </a>
 
-          <a href='#' target='_blank'>
+          <a href='https://www.linkedin.com/in/vijay-jadhav1997' target='_blank'>
             <div className="button">
               <div className="icon-wrapper">
                 <FaLinkedinIn className='icon' />
@@ -50,7 +50,7 @@ function Intro() {
             </div>
           </a>
 
-          <a href='#' target='_blank'>
+          <a href='https://codepen.io/VIJAY-JADHAV-the-bashful/pens/showcase' target='_blank'>
             <div className="button">
               <div className="icon-wrapper">
                 <FaCodepen className='icon' />
@@ -59,7 +59,7 @@ function Intro() {
             </div>
           </a>
 
-          <a href='#' target='_blank'>
+          <a href='https://x.com/VijayJadha93653' target='_blank'>
             <div className="button">
               <div className="icon-wrapper">
                 <FaXTwitter className='icon' />

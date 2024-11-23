@@ -49,9 +49,14 @@
   line-height: 1.6rem;
 }
 
+.hireme-link {
+  width: max-content;
+}
+
 .hireme-btn {
-  background-color: #d25b28;
   color: #fff;
+  background-color: #4cb082;
+  /* background-color: #53b315; */
   margin: 1rem 0;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
@@ -78,18 +83,18 @@
 
 .social-medias a {
   text-decoration: none;
+  color: #272525;
 }
   
 .social-medias .button {
+  display: inline-block;
   height: 2.5rem;
   width: 2.5rem;
-  /* float: left; */
+  font-size: 1.5rem;
   margin: 0 5px;
-  /* padding: 7px; */
-  border-radius: 2rem;
-  display: inline-block;
-  overflow: hidden;
   background-color: #fff;
+  border-radius: 2.5rem;
+  overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
 
@@ -97,35 +102,53 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  /* text-align: center; */
   height: 2.5rem;
   width: 2.5rem;
-  /* line-height: 2.5rem; */
+  /* line-height: 3rem; */
   border-radius: 50%;
-  background-color: #f3b414;
+  /* background-color: #f3b414; */
   /* margin-right: 10px; */
-  /* transition: all 0.3s ease-in-out; */
+  transition: all 0.3s ease-in-out;
 
 }
 
 .social-medias .icon-wrapper .icon {
   font-size: 1.5rem;
-  /* line-height: 2.5rem; */
-  transition: all 0.3s ease-in-out;
 }
   
   
 .social-medias .button span{
-  color: #272525;
   font-size: 1.25rem;
-  line-height: 2.5rem;
-  margin: 0 10px;
-  display: inline-block;
-  font-weight: 500;
+  margin-left: 10px;
 }
-  
+
+.social-medias a:nth-child(2) .button {
+  color: #0c2b91;
+}
+
+.social-medias a:nth-child(3) .button {
+  color: #9317bc;
+}
+
   
 .social-medias .button:hover {
-  width: max-content;
+  width: 160px;
+}
+
+.social-medias .button:hover .icon-wrapper {
+  background-color: #181717;
+  color: #fff;
+}
+
+.social-medias a:nth-child(2) .button:hover .icon-wrapper {
+  background-color: #0c2b91;
+  color: #fff;
+}
+
+.social-medias a:nth-child(3) .button:hover .icon-wrapper {
+  background-color: #9317bc;
+  color: #fff;
 }
 
 
@@ -154,6 +177,29 @@
   }
   .intro-para {
     font-size: 1.1rem;
+  }
+
+  .social-medias .button {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .social-medias .icon-wrapper {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .social-medias .icon-wrapper .icon {
+    font-size: 22px;
+  }
+
+  .social-medias .button span {
+    font-size: 1rem;
+  }
+  
+  .social-medias .button:hover {
+    width: 135px;
   }
 }
 
