@@ -15,10 +15,10 @@ function Intro() {
         <span className="intro-text">
           I&apos;m
           <span className="intro-name">Vijay Jadhav</span><br />
-          a full-stack developer
+          <span className="intro-profession">a full-stack developer</span>
         </span>
         <p className="intro-para">
-          I am an aspiring web developer with entry-level professional skills in Web development. As self-motivated and hardworking developer seeking an opportunity to work in a challenging environment to prove my programming skills and utilize my knowledge of web dev technologies for the growth of the organization.
+          I am an aspiring web developer with entry-level professional skills in Web development. As self-motivated developer seeking an opportunity to work in a challenging environment to prove my programming skills and utilize my knowledge of web dev technologies for the growth of the organization.
         </p>
         <Link className='hireme-link' to='contact' spy={true} smooth={true} offset={-50} duration={700}>
           <button className='hireme-btn'><PiHandbagSimpleFill className='bag-icon' /> Hire me</button>
@@ -63,7 +63,7 @@ function Intro() {
       </div>
       <img className='bg-img' src={profImg} alt="Profile background Image" />
 
-      <Link className='hireme-link' to='skills' spy={true} smooth={true} offset={-30} duration={700}>
+      <Link className='latest-work-link' to='skills' spy={true} smooth={true} offset={-30} duration={700}>
         <div className="pointer">
           Latest Work
           <FaArrowDownLong className='arrow' />
