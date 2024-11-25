@@ -1,12 +1,18 @@
 #contact {
-  max-width: 50rem;
+  max-width: 75rem;
+  min-height: 100vh;
+  /* max-width: 50rem; */
   width: 100%;
+  margin: auto;
   padding: 2rem;
   background-color: #062f5e3c;
+  background-image: url('/src/assets/images/contact-me.svg');
   /* background-color: #131524; */
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 
 .form-wrapper {
   max-width: 25rem;
@@ -23,4 +29,30 @@
 
 form .input-box {
   width: max-content;
+  padding: 5px;
+}
+form .input-box label {
+  margin-right: 0.5rem;
+}
+
+form .input-box input,
+form .input-box textarea {
+  margin: 5px 0;
+  padding: 5px 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+form input.submit-btn {
+  padding: 5px 16px;
+  margin: 0;
+  font-size: 1.2rem;
+  background-color: #72ba72;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form input.submit-btn:hover {
+  transform: scale(0.97);
 }

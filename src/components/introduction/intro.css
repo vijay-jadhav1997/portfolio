@@ -157,8 +157,6 @@
   color: #fff;
 }
 
-
-
 .latest-work-link {
   width: max-content;
   margin: auto;
@@ -193,6 +191,8 @@
     transform: translate(-50%, 50%);
   }
 }
+
+
 
 
 
