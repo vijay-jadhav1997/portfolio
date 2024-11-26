@@ -1,16 +1,18 @@
 #contact {
   max-width: 75rem;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* max-width: 50rem; */
   width: 100%;
   margin: auto;
   padding: 2rem;
   background-color: #062f5e3c;
   background-image: url('/src/assets/images/contact-me.svg');
+  background-position: center;
+  object-fit: cover;
   /* background-color: #131524; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 
@@ -33,6 +35,7 @@ form .input-box {
 }
 form .input-box label {
   margin-right: 0.5rem;
+  color: #fff;
 }
 
 form .input-box input,
@@ -42,7 +45,11 @@ form .input-box textarea {
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   font-size: 1.1rem;
-  color: #e0e0e0;
+  color: #5ae6a7;
+  /* color: #e0e0e0; */
+}
+form .input-box input::placeholder {
+  color: lightgray;
 }
 
 form input.submit-btn {

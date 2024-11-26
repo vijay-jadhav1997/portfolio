@@ -20,6 +20,7 @@ const Skills = () => {
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>Tailwind CSS</li>
               {/* <li>Bootstrap</li> */}
             </ul>
