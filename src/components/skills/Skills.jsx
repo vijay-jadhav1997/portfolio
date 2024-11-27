@@ -1,9 +1,10 @@
 import './Skills.css';
-import frontend from '../../assets/frontend_tech.png';
-import jsLibraries from '../../assets/react_redux.png';
-import backend from '../../assets/backend.png';
-import github from '../../assets/git_github.png';
-import restApi from '../../assets/rest_api.png';
+import frontend from '../../assets/images/skills/frontend_tech.png';
+import jsLibraries from '../../assets/images/skills/react_redux.png';
+import backend from '../../assets/images/skills/backend.png';
+import github from '../../assets/images/skills/git_github.png';
+import restApi from '../../assets/images/skills/rest_api.png';
+
 
 const Skills = () => {
   return (

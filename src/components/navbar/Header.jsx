@@ -1,6 +1,6 @@
 import './Header.css';
 import logo from '../../assets/logo.png';
-import contactImg from '../../assets/contactImg.png';
+import contactImg from '../../assets/icons/contactImg.png';
 import { IoMenu } from "react-icons/io5";
 import {Link} from 'react-scroll';
 

@@ -45,9 +45,17 @@ form .input-box textarea {
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   font-size: 1.1rem;
-  color: #5ae6a7;
+  color: #90e8c0;
   /* color: #e0e0e0; */
 }
+
+form .input-box input:valid,
+form .input-box textarea:valid {
+  background-color: #ddeeff;
+  color: #00b99a;
+  /* border-color: #00b99a; */
+}
+
 form .input-box input::placeholder {
   color: lightgray;
 }
@@ -60,6 +68,7 @@ form input.submit-btn {
   border-radius: 5px;
   cursor: pointer;
 }
+
 form input.submit-btn:hover {
   transform: scale(0.97);
 }

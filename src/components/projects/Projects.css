@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 75rem;
   margin: 0 auto;
-  padding: 1rem 1rem;
+  padding: 1rem;
   position: relative;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .projects h2 {
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   width: max-content;
   text-decoration: underline 2px;
   text-underline-offset: 0.5rem;
@@ -24,11 +24,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 2rem 0;
 }
 
 #projects .project > div {
   width: 50%;
-  margin: 2rem 0;
   padding: 2rem 1rem;
   position: relative;
 }
@@ -41,6 +41,7 @@
   max-width: 25rem;
   position: relative;
   z-index: 1;
+  /* background-color: #add8e6; */
 }
 
 #projects .project .project-img-wrapper:hover img {
@@ -52,9 +53,9 @@
 }
   
 #projects .project .project-img-wrapper .tooltip {
+  position: absolute;
   padding: 5px 10px;
   border-radius: 5px;
-  position: absolute;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
@@ -85,10 +86,8 @@
 
  
 #projects .project .project-img-wrapper .tooltip span {
-  /* background-color: #d92879; */
   position: absolute;
   display: inline-block;
-  /* color: #fff; */
   border-radius: 5px;
   width: 1.25rem;
   height: 1.25rem;
@@ -225,7 +224,7 @@
 #projects .project .project-intro .tech-stack li {
   border: 1px solid #9298a3;
   padding: 5px 10px;
-  border-radius: 8px;
+  border-radius: 8px; 
 }
 
 .central-line {
@@ -241,12 +240,21 @@
 
 
 @media screen and (max-width: 640px) {
+  #projects {
+    padding: 2rem;
+  }
   #projects .project {
     flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 2rem;
   }
 
   #projects .project > div {
     width: 100%;
+  }
+
+  #projects .project .project-img-wrapper {
+    margin: auto;
   }
 
   
@@ -254,4 +262,43 @@
   #projects .project div .connecting-line {
     display: none;
   }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  #projects {
+    padding: 0.5rem 1.5rem;
+  }
+    
+  #projects .project {
+    max-width: 400px;
+  }
+    
+  #projects .project .project-intro .tech-stack li {
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 5px;
+  }
+
+  #projects .project.left > div {
+    padding: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 376px) {
+  #projects {
+    padding: 1rem 0.75rem;
+  }
+  
+  #projects .project .project-intro .tech-stack li {
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 5px;
+  }
+
+  /* #projects .project.left > div {
+    padding: 1rem 0.5rem;
+  } */
 }
