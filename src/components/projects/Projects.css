@@ -33,6 +33,7 @@
   position: relative;
 }
 
+#projects .project.left .project-img-wrapper,
 #projects .project.right .project-img-wrapper {
   margin-left: auto;
 }
@@ -44,6 +45,10 @@
   /* background-color: #add8e6; */
 }
 
+#projects .project.tab .project-img-wrapper {
+  max-width: 30rem;
+}
+  
 #projects .project .project-img-wrapper:hover img {
   transform: scale(1.05);
 }
@@ -247,6 +252,9 @@
     flex-direction: column;
     border: 1px solid lightgray;
     border-radius: 2rem;
+  }
+  #projects .project.right {
+    flex-direction: column-reverse;
   }
 
   #projects .project > div {

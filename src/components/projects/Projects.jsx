@@ -58,7 +58,7 @@ function Projects() {
        
       </div>
       
-      <div className="project explore-nation left">
+      <div className="project explore-nation left tab">
         <div>
           <div className="project-img-wrapper">
             <span className="tooltip"><span></span><a target='_blank' href="">ExploreNation <FaExternalLinkAlt /></a> </span>
@@ -80,7 +80,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="project shoe-company right">
+      <div className="project shoe-company right tab">
         <div className="project-intro">
           <h3 className="project-title"><a target='_blank' href="">Shoe Company</a></h3>
           <a target='_blank' href="https://github.com/vijay-jadhav1997/indic-quiz-app" className="github-link">(Github - shoe_company)</a>
