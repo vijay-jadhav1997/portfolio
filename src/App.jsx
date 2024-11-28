@@ -1,5 +1,5 @@
 import Header from './components/navbar/Header'
-import Intro from './components/introduction/Intro'
+// import Intro from './components/introduction/Intro'
 import Skills from './components/skills/Skills'
 
 import './App.css'
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className='app'>
       <Header/>
-      <Intro/>
+      {/* <Intro/> */}
       <Projects />
       <Skills/>
       <ContactMe/>

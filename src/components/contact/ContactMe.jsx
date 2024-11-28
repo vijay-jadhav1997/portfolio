@@ -17,11 +17,6 @@ function ContactMe() {
           </div>
           
           <div className="input-box">
-            <label htmlFor="mobile">Mobile No:</label> <br />
-            <input id="mobile" name="" type="tel" placeholder="8551872404" />
-          </div>
-
-          <div className="input-box">
             <label htmlFor="message">Message:</label> <br />
             <textarea id="message" name="" type="text" ></textarea>
           </div>
