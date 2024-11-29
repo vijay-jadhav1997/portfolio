@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 75rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 3rem 1rem 1rem;
   position: relative;
 }
 
@@ -33,7 +33,9 @@
   position: relative;
 }
 
-#projects .project.left .project-img-wrapper,
+#projects .project.left .project-img-wrapper {
+  margin-right: auto;
+}
 #projects .project.right .project-img-wrapper {
   margin-left: auto;
 }
@@ -148,21 +150,22 @@
 
 #projects .project div .connecting-line span {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   border: 2px solid #e0d345;
   position: absolute;
-  top: -5px;
+  top: -7px;
   background-color: var(--projects-bg);
 }
 
 #projects .project.left div .connecting-line span {
-  right: -5px;
+  right: -7px;
 }
 
 #projects .project.right div .connecting-line span {
-  left: -5px;
+  left: -7px;
+  border-color: #f91254;
 }
 
 
@@ -234,16 +237,22 @@
 
 .central-line {
   width: 2px;
-  height: 97%;
+  height: 95%;
   background-color: #e7eff5;
   position: absolute;
   left: 50%;
-  top: 3rem;
+  top: 5rem;
   transform: translateX(-50%);
 }
 
 
 
+@media screen and (max-width: 768px) {
+  /* #projects .project > div {
+    padding: 2rem 0rem;
+  } */
+}
+  
 @media screen and (max-width: 640px) {
   #projects {
     padding: 2rem;
@@ -265,7 +274,10 @@
     margin: auto;
   }
 
-  
+  #projects .project .project-img-wrapper .tooltip {
+    font-size: 16px;
+  }
+
   .central-line,
   #projects .project div .connecting-line {
     display: none;
@@ -291,6 +303,10 @@
 
   #projects .project.left > div {
     padding: 1rem;
+  }
+
+  #projects .project .project-img-wrapper .tooltip {
+    font-size: 16px;
   }
 }
 

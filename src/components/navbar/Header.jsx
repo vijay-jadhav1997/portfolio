@@ -11,7 +11,7 @@ const Header = () => {
       <nav className="nav-menu">
         <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={700} className='nav-menu-item'>Home</Link>
         {/* <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-30} duration={700} className='nav-menu-item'>About</Link> */}
-        <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-70} duration={700} className='nav-menu-item'>Projects</Link>
+        <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-90} duration={700} className='nav-menu-item'>Projects</Link>
         <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={700} className='nav-menu-item'>Skills</Link>
       </nav>
       <button className="contactBtn"
