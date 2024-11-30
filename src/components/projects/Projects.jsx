@@ -15,7 +15,7 @@ function Projects() {
       <div className="project indic-food left">
         <div>
           <div className="project-img-wrapper">
-            <span className="tooltip"><span></span><a target='_blank' href="">Indic Food <FaExternalLinkAlt /></a> </span>
+            <span className="tooltip"><span></span><a target='_blank' href="">IndicFood <FaExternalLinkAlt /></a> </span>
             <img src={indicfood} alt="indic food" />
           </div>
           <div className="connecting-line"><span></span></div>
@@ -95,7 +95,7 @@ function Projects() {
       
         <div>
           <div className="project-img-wrapper">
-            <span className="tooltip"><span></span><a target='_blank' href="">Shoe Company <FaExternalLinkAlt /></a> </span>
+            <span className="tooltip"><span></span><a target='_blank' href="">ShoeCompany <FaExternalLinkAlt /></a> </span>
             <img src={shoe_company} alt="Shoe Company" />
           </div>
           <div className="connecting-line"><span></span></div>

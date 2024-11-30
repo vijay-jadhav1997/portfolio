@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 75rem;
   margin: 0 auto;
-  padding: 3rem 1rem 1rem;
+  padding: 2rem 1rem 1rem;
   position: relative;
 }
 
@@ -48,7 +48,7 @@
 }
 
 #projects .project.tab .project-img-wrapper {
-  max-width: 30rem;
+  max-width: 32rem;
 }
   
 #projects .project .project-img-wrapper:hover img {
@@ -241,7 +241,7 @@
   background-color: #e7eff5;
   position: absolute;
   left: 50%;
-  top: 5rem;
+  top: 4rem;
   transform: translateX(-50%);
 }
 
@@ -252,6 +252,7 @@
     padding: 2rem 0rem;
   } */
 }
+
   
 @media screen and (max-width: 640px) {
   #projects {
@@ -259,7 +260,7 @@
   }
   #projects .project {
     flex-direction: column;
-    border: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
     border-radius: 2rem;
   }
   #projects .project.right {
