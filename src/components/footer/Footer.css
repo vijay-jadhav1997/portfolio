@@ -1,0 +1,34 @@
+footer {
+  margin: 5rem 0;
+  padding: 2rem;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+footer .logo {
+  max-width: 5rem;
+  margin: auto;
+}
+
+footer .logo img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+footer .social-medias span {
+  padding: 5px 10px;
+  border: 1px solid #89a189;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #bad2bc;
+}
+footer .social-medias span:hover {
+  background-color: #fff;
+  color: #0746c3;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .social-medias span:hover {
+  color: black;
+}

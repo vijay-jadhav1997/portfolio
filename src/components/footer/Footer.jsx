@@ -1,6 +1,7 @@
-import {logo} from '../../assets/logo.png'
+import logo from '../../assets/logo.png'
+import './Footer.css'
 
-const Footer = () => {
+function Footer() {
   return (
     <footer>
       <div className="logo">

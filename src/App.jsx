@@ -5,19 +5,19 @@ import Skills from './components/skills/Skills'
 import './App.css'
 import ContactMe from './components/contact/ContactMe'
 import Projects from './components/projects/Projects'
-// import Footer from './components/footer/Footer'
+import Footer from './components/footer/Footer'
 
 
 function App() {
 
   return (
     <div className='app'>
-      <Header/>
-      <Intro/>
+      <Header />
+      <Intro />
       <Projects />
-      <Skills/>
-      <ContactMe/>
-      {/* <Footer /> */}
+      <Skills />
+      <ContactMe />
+      <Footer />
     </div>
   )
 }
