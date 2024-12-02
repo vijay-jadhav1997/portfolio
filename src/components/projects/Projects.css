@@ -47,16 +47,27 @@
   /* background-color: #add8e6; */
 }
 
-#projects .project.tab .project-img-wrapper {
-  max-width: 32rem;
+#projects .project.left.tab .project-img-wrapper {
+  transform: translateX(-15%);
+}
+#projects .project.right.tab .project-img-wrapper {
+  transform: translateX(15%);
+}
+
+#projects .project.tab .project-img-wrapper img {
+  transform: scale(1.2);
 }
   
 #projects .project .project-img-wrapper:hover img {
-  transform: scale(1.05);
+  scale: 1.05;
+  /* transform: scale(1.05); */
 }
 
 #projects .project .project-img-wrapper:hover .tooltip {
   top: -3.5rem;
+}
+#projects .project.tab .project-img-wrapper:hover .tooltip {
+  top: -4.5rem;
 }
   
 #projects .project .project-img-wrapper .tooltip {
@@ -134,7 +145,7 @@
 #projects .project div .connecting-line {
   position: absolute;
   top: 50%;
-  width: 50%;
+  width: 60%;
   height: 1px;
   background-color: #add8e6;
   z-index: 0;

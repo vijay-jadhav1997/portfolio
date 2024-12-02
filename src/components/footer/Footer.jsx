@@ -1,18 +1,20 @@
-import logo from '../../assets/logo.png'
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter, FaCodepen } from "react-icons/fa6";
+
 import './Footer.css'
+
 
 function Footer() {
   return (
     <footer>
-      <div className="logo">
-        <img src={logo} alt="logo" />
-      </div>
+      <h3>Vijay Jadhav</h3>
       <div className="social-medias">
-        <span>LinkedIn</span>
-        <span>GitHub</span>
-        <span>Codpen</span>
-        <span>Twitter</span>
+        <a href='/'><FaGithub className='icon' /> </a>
+        <a href='/'><FaLinkedinIn className='icon' /> </a>
+        <a href='/'><FaCodepen className='icon' /> </a>
+        <a href='/'><FaXTwitter className='icon' /> </a>
       </div>
+      <span>© All right reserved</span>
     </footer>
   )
 }
