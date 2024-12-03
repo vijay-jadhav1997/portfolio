@@ -1,8 +1,10 @@
+import contact from '/src/assets/images/contact-me.svg'
 import './ContactMe.css'
 
 function ContactMe() {
   return (
     <section id="contact" className='contact'>
+      <img src={contact} alt="Contact" />
       <div className="form-wrapper">
         <h3>Contact Me</h3>
         <form action="/" method="post">

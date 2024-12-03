@@ -8,13 +8,13 @@ function Footer() {
   return (
     <footer>
       <h3>Vijay Jadhav</h3>
-      <div className="social-medias">
+      <div className="footer-social-medias">
         <a href='/'><FaGithub className='icon' /> </a>
         <a href='/'><FaLinkedinIn className='icon' /> </a>
         <a href='/'><FaCodepen className='icon' /> </a>
         <a href='/'><FaXTwitter className='icon' /> </a>
       </div>
-      <span>© All right reserved</span>
+      <span className="">© All right reserved</span>
     </footer>
   )
 }
