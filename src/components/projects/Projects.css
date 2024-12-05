@@ -14,10 +14,13 @@
 }
 
 .projects h2 {
-  margin: 0 auto 1rem;
+  /* margin: 0 auto 1rem; */
+  margin: 3px auto 1rem;
   width: max-content;
+  font-size: 2rem;
   text-decoration: underline 2px;
   text-underline-offset: 0.5rem;
+  color: #e7eff5;
 }
 
 #projects .project {
@@ -36,6 +39,7 @@
 #projects .project.left .project-img-wrapper {
   margin-right: auto;
 }
+
 #projects .project.right .project-img-wrapper {
   margin-left: auto;
 }
@@ -50,6 +54,7 @@
 #projects .project.left.tab .project-img-wrapper {
   transform: translateX(-15%);
 }
+
 #projects .project.right.tab .project-img-wrapper {
   transform: translateX(15%);
 }
@@ -66,6 +71,7 @@
 #projects .project .project-img-wrapper:hover .tooltip {
   top: -3.5rem;
 }
+
 #projects .project.tab .project-img-wrapper:hover .tooltip {
   top: -4.5rem;
 }
@@ -73,6 +79,7 @@
 #projects .project .project-img-wrapper .tooltip {
   position: absolute;
   padding: 5px 10px;
+  font-size: 14px;
   border-radius: 5px;
   left: 50%;
   top: 0;
@@ -179,11 +186,16 @@
   border-color: #f91254;
 }
 
-
 #projects .project .project-intro {
   padding: 2rem;
   height: 100%;
 }
+
+#projects .project .project-intro .project-details {
+  line-height: 1.5rem;
+}
+
+
 
 #projects .project .project-intro .project-title a {
   font-size: 1.5rem;
@@ -252,7 +264,7 @@
   background-color: #e7eff5;
   position: absolute;
   left: 50%;
-  top: 4rem;
+  top: 4.5rem;
   transform: translateX(-50%);
 }
 
@@ -267,12 +279,13 @@
   
 @media screen and (max-width: 640px) {
   #projects {
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
   #projects .project {
     flex-direction: column;
     border-bottom: 1px solid lightgray;
     border-radius: 2rem;
+    margin-top: 4rem;
   }
   #projects .project.right {
     flex-direction: column-reverse;
@@ -282,13 +295,21 @@
     width: 100%;
   }
 
+  #projects .project.left.tab .project-img-wrapper {
+    transform: none;
+  }
+
+  #projects .project.right.tab .project-img-wrapper {
+    transform: none;
+  }
+
   #projects .project .project-img-wrapper {
     margin: auto;
   }
 
-  #projects .project .project-img-wrapper .tooltip {
+  /* #projects .project .project-img-wrapper .tooltip {
     font-size: 16px;
-  }
+  } */
 
   .central-line,
   #projects .project div .connecting-line {
@@ -313,13 +334,13 @@
     border-radius: 5px;
   }
 
-  #projects .project.left > div {
+  /* #projects .project.left > div {
     padding: 1rem;
-  }
+  } */
 
-  #projects .project .project-img-wrapper .tooltip {
+  /* #projects .project .project-img-wrapper .tooltip {
     font-size: 16px;
-  }
+  } */
 }
 
 
