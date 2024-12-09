@@ -5,12 +5,34 @@ import backend from '../../assets/images/skills/backend.png';
 import github from '../../assets/images/skills/git_github.png';
 import restApi from '../../assets/images/skills/rest_api.png';
 
+import python from '../../assets/images/python.png'
+import javascript from '../../assets/images/js.png'
 
 const Skills = () => {
   return (
     <section id='skills' className="skills">
       <h2 className='skills-heading'>My Web Development Skills</h2>
       <p className='skills-description'>Passionate about coding and web development, I thrive on exploring new technologies and AI tools.  For me, coding is not just a career path – it is a lifelong pursuit fueled by curiosity, innovation, and a love for problem-solving.</p>
+
+      <div className="skills-container">
+        <div className="frontend">
+          <h3>Frontend Technologies</h3>
+          <div className="skill">
+            <div className="img-wrapper">
+              <img src={javascript} alt="Javascript" />
+            </div>
+            <h4>JavaScript</h4>
+          </div>
+
+          <div className="skill">
+            <div className="img-wrapper">
+              <img src={python} alt="Typescript" />
+            </div>
+            <h4>Typescript</h4>
+          </div>
+          
+        </div>
+      </div>
       
       <div className="skills-wrapper">
         <div className="skill-category">

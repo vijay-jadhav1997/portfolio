@@ -31,7 +31,7 @@
 }
 
 #projects .project > div {
-  width: 50%;
+  /* width: 50%; */
   padding: 2rem 1rem;
   position: relative;
 }
@@ -282,10 +282,12 @@
     padding: 2rem 1rem;
   }
   #projects .project {
+    max-width: 500px;
+    width: 100%;
     flex-direction: column;
     border-bottom: 1px solid lightgray;
     border-radius: 2rem;
-    margin-top: 4rem;
+    margin: 4rem auto 0;
   }
   #projects .project.right {
     flex-direction: column-reverse;

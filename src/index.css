@@ -9,13 +9,13 @@
   font-family: Arial, sans-serif;
 }
 
+
 html {
   scrollbar-width: thin;
-  /* scrollbar-color: #7477a8;
-  scrollbar-base-color: goldenrod; */
+  background-color: #020537;
+  color: #d3d3d3;
 }
 
 body {
-  background-color: #020537;
-  color: #d3d3d3;
+  width: 100%;
 }
