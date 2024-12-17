@@ -1,7 +1,8 @@
 .header {
   height: 5rem;
   width: 100%;
-  max-width: 75rem;
+  max-width: 80rem;
+  /* max-width: 75rem; */
   margin: 0 auto;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -43,12 +44,57 @@
   border-bottom: 1px solid goldenrod;
 }
 
-.humburger-menu-icon {
+.menu-wrapper {
   display: none;
-  width: 2rem;
-  height: 2rem;
-  object-fit: cover;
+  cursor: pointer;
+  padding: 4px;
+  /* overflow: hidden; */
 }
+
+.menu-wrapper span {
+  width: 2rem;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  animation: opened 0.5s ease-in-out forwards;
+}
+
+@keyframes opened {
+  from{
+    transform: scale(0);
+  } to{
+    transform: scale(1);
+  }
+}
+
+.menu-wrapper.open span:nth-child(2) {
+  display: none;
+}
+.menu-wrapper.open span:first-child {
+  animation: closing1 0.5s ease-in-out forwards;
+}
+.menu-wrapper.open span:last-child {
+  animation: closing2 0.5s ease-in-out forwards;
+}
+
+@keyframes closing1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) translateY(100%) rotate(45deg);
+  }
+}
+
+@keyframes closing2 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) translateY(-100%) rotate(-45deg);
+  }
+}
+
 
 .contactBtn {
   background-color: #fff;
@@ -84,8 +130,10 @@
 
 @media screen and (max-width:632px) {
   .header {
+    overflow: unset;
     height: 4rem;
     padding: 0.75rem 2rem;
+    position: relative;
   }
   
   .header .logo {
@@ -96,9 +144,28 @@
   .nav-menu {
     display: none;
   }
-  
-  .humburger-menu-icon {
-    display: block;
+
+  .nav-menu.open {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    position: absolute;
+    padding: 3rem 2rem;
+    background-color: #0d03343d;
+    top: 1rem;
+    right: 0;
+  }
+
+  .nav-menu.open .nav-menu-item {
+    /* display: inline-block; */
+    width: max-content;
+    margin-bottom: 1rem;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
   }
 
   .contactBtn {
