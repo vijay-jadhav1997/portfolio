@@ -2,19 +2,18 @@
   height: 5rem;
   width: 100%;
   max-width: 80rem;
-  /* max-width: 75rem; */
   margin: 0 auto;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
   background-color: #02031f;
-  overflow: hidden;
-  /* background-color: #020537; */
 }
 
 .header .logo {
@@ -110,8 +109,8 @@
 
 
 .contactBtn:hover {
-  transform: scale(0.99);
-  background-color: #ebebeb;
+  transform: scale(0.98);
+  background-color: #ebebebd9;
 }
 
 
@@ -142,30 +141,53 @@
   }
   
   .nav-menu {
-    display: none;
+    position: fixed;
+    border-radius: 10px;
+    min-height: 100vh;
+    min-width: 20rem;
+    padding: 4rem 0;
+    backdrop-filter: blur(20px);
+    background-color: #b1f9f63e;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* align-items: center; */
+    top: 0;
+    right: -100%;
+    transition: all 0.3s ease-in-out;
   }
 
   .nav-menu.open {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    position: absolute;
-    padding: 3rem 2rem;
-    background-color: #0d03343d;
-    top: 1rem;
     right: 0;
   }
 
-  .nav-menu.open .nav-menu-item {
-    /* display: inline-block; */
-    width: max-content;
-    margin-bottom: 1rem;
+  .nav-menu .nav-menu-item {
+    padding: 0.5rem 2rem;
+    font-size: 1.25rem;
+    margin-right: 0;
   }
 
+  .nav-menu-item:hover {
+    border-bottom: none;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    background-color: #5b9a97b0;
+  }
+
+  .active {
+    color: #daa520;
+    border-bottom: none;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    background-color: #6db5b352;
+  }
+  
   .menu-wrapper {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+    /* min-height: 2.5rem;
+    min-width: 4rem; */
   }
 
   .contactBtn {
@@ -173,11 +195,20 @@
     padding: 0.5rem 0.75rem;
     font-size: 0.75rem;
     border-radius: 1.75rem;
+    margin-left: 5rem;
   }
+
 }
 
-/* @media  screen and (max-width: 425px) {
-  .contactBtn-img {
+@media  screen and (max-width: 425px) {
+  .contactBtn {
+    margin-left: 0;
+  }
+
+}
+  
+ @media  screen and (max-width: 425px) {
+  /* .contactBtn-img {
     width: 0.75rem;
     height: 0.75rem;
   }
@@ -186,5 +217,6 @@
     gap: 0.5rem;
     padding: 0.25rem 0.5rem;
     font-size: 12px;
-  }
-} */
+  } */
+   
+} 

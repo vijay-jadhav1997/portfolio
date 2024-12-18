@@ -50,6 +50,7 @@
   position: relative;
   z-index: 1;
   /* background-color: #add8e6; */
+
 }
 
 #projects .project.left.tab .project-img-wrapper {
@@ -64,6 +65,10 @@
   transform: scale(1.2);
 }
   
+#projects .project .project-img-wrapper img {
+  filter: drop-shadow(0 0 50px #3b82f666);
+}
+
 #projects .project .project-img-wrapper:hover img {
   scale: 1.05;
   /* transform: scale(1.05); */
@@ -107,7 +112,11 @@
 }
 
 #projects .project.indic-product .project-img-wrapper .tooltip {
-  background-color: #f08101;
+  background-color: #b76910;
+}
+
+#projects .project.track-expenses .project-img-wrapper .tooltip {
+  background-color: #764abc;
 }
 
  
@@ -140,8 +149,12 @@
 }
 
 #projects .project.indic-product .project-img-wrapper .tooltip span {
-  background-color: #f08101;
+  background-color: #b76910;
   /* background-color: #ff9822; */
+}
+
+#projects .project.track-expenses .project-img-wrapper .tooltip span {
+  background-color: #764abc;
 }
 
 
@@ -236,11 +249,19 @@
 }
 
 #projects .project.indic-product .project-intro .project-title a {
-  color: #ff8e0c;
+  color: #c96f09;
 }
 
 #projects .project.indic-product .project-intro .github-link {
-  color: #c7700d;
+  color: #a95f0a;
+}
+
+#projects .project.track-expenses .project-intro .project-title a {
+  color: #ae7dfd;
+}
+
+#projects .project.track-expenses .project-intro .github-link {
+  color: #764abc;
 }
 
 #projects .project .project-intro .tech-stack {
@@ -283,12 +304,12 @@
     padding: 2rem 1rem;
   }
   #projects .project {
-    max-width: 500px;
+    max-width: 450px;
     width: 100%;
     flex-direction: column;
     border-bottom: 1px solid lightgray;
     border-radius: 2rem;
-    margin: 4rem auto 0;
+    margin: 4.5rem auto 0;
   }
   #projects .project.right {
     flex-direction: column-reverse;
@@ -314,6 +335,14 @@
     font-size: 16px;
   } */
 
+  #projects .project .project-img-wrapper .tooltip {
+    top: -2.75rem;
+  }
+
+  #projects .project.tab .project-img-wrapper .tooltip {
+    top: -4rem;
+  }
+
   .central-line,
   #projects .project div .connecting-line {
     display: none;
@@ -324,7 +353,7 @@
 
 @media screen and (max-width: 500px) {
   #projects {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.5rem 3rem;
   }
     
   #projects .project {
@@ -337,13 +366,9 @@
     border-radius: 5px;
   }
 
-  /* #projects .project.left > div {
-    padding: 1rem;
-  } */
-
-  /* #projects .project .project-img-wrapper .tooltip {
-    font-size: 16px;
-  } */
+  #projects .project .project-intro {
+    padding: 2rem 1rem;
+  }
 }
 
 
@@ -358,7 +383,4 @@
     border-radius: 5px;
   }
 
-  /* #projects .project.left > div {
-    padding: 1rem 0.5rem;
-  } */
 }

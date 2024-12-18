@@ -1,9 +1,4 @@
 import './Skills.css';
-// import frontend from '../../assets/images/skills/frontend_tech.png';
-// import jsLibraries from '../../assets/images/skills/react_redux.png';
-// import backend from '../../assets/images/skills/backend.png';
-// import github from '../../assets/images/skills/git_github.png';
-// import restApi from '../../assets/images/skills/rest_api.png';
 
 import javascript from '../../assets/images/js.png'
 import typescript from '../../assets/images/typescript.png'
@@ -16,11 +11,11 @@ import bootstrap from '../../assets/images/bootstrap.png'
 
 import python from '../../assets/images/python.png'
 import django from '../../assets/images/django2.png'
+import restframework from '../../assets/images/restframework.png'
 
-// import restframework from '../../assets/images/restframework.png'
+import sql from '../../assets/images/sql.png'
 import postgresql from '../../assets/images/postgresql.png'
 import redis from '../../assets/images/redis.png'
-import sql from '../../assets/images/redis.png'
 
 import git from '../../assets/images/git.png'
 import github from '../../assets/images/github.png'
@@ -111,9 +106,9 @@ const Skills = () => {
           
           <div className="skill">
             <div className="img-wrapper">
-              <img src={django} alt="Django Rest Framework" />
+              <img src={restframework} style={{backgroundColor: '#fff', padding: '2px', borderRadius: '5px'}} alt="Django Rest Framework" />
             </div>
-            <h4>Django Rest Framework</h4>
+            <h4>Rest Framework</h4>
           </div>
           
         </div>
@@ -122,7 +117,7 @@ const Skills = () => {
         <div className="database">
           <div className="skill">
             <div className="img-wrapper">
-              <img src={sql} alt="SQL" />
+              <img src={sql} style={{ borderRadius: '5px'}} alt="SQL" />
             </div>
             <h4>SQL</h4>
           </div>
@@ -170,87 +165,50 @@ const Skills = () => {
 
       </div>
       
-      {/* <div className="skills-wrapper">
-        <div className="skill-category">
-          <img className="skill-category-img" src={frontend} alt="Image depicting logos of frontend technologies" />
-          <div className="skill-category-details">
-            <h4>Frontend Technologies</h4>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>Tailwind CSS</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
+      <div className="skills-slider1" style={{'--item-width': '125px', '--item-height': '120px', '--quantity': '18'}}>
+        <div className="list">
+          <span className="item" style={{'--position': '1'}}>HTML</span>
+          <span className="item" style={{'--position': '2'}}>CSS</span>
+          <span className="item" style={{'--position': '3'}}>JavaScript</span>
+          <span className="item" style={{'--position': '4'}}>TypeScript</span>
+          <span className="item" style={{'--position': '5'}}>React.js</span>
+          <span className="item" style={{'--position': '6'}}>Redux.js</span>
+          <span className="item" style={{'--position': '7'}}>Tailwind CSS</span>
+          <span className="item" style={{'--position': '8'}}>Bootstrap</span>
+          <span className="item" style={{'--position': '9'}}>Python</span>
+          <span className="item" style={{'--position': '10'}}>Django</span>
+          <span className="item" style={{'--position': '11'}}>vite</span>
+          <span className="item" style={{'--position': '12'}}>Rest Framework</span>
+          <span className="item" style={{'--position': '13'}}>SQL</span>
+          <span className="item" style={{'--position': '14'}}>PostgreSQL</span>
+          <span className="item" style={{'--position': '15'}}>Redis</span>
+          <span className="item" style={{'--position': '16'}}>Git</span>
+          <span className="item" style={{'--position': '17'}}>GitHub</span>
+          <span className="item" style={{'--position': '18'}}>npm</span>
         </div>
+      </div>
 
-        <div className="skill-category">
-          <img className="skill-category-img" src={jsLibraries} alt="Image depicting logos of JavaScript framework." />
-          <div className="skill-category-details">
-            <h4>JavaScript Libraries</h4>
-            <ul>
-              <li>React.js</li>
-              <li>Redux.js</li>
-              <li>React-router-dom</li>
-            </ul>
-          </div>
+      <div className="skills-slider2" style={{'--item-width': '50px', '--item-height': '250px', '--quantity':'17'}}>
+        <div className="list">
+          <div className="item" style={{'--position': '1'}}><img src={html5} alt="HTML" /></div>
+          <div className="item" style={{'--position': '2'}}><img src={css3} alt="CSS" /></div>
+          <div className="item" style={{'--position': '3'}}><img src={javascript} alt="Javascript" /></div>
+          <div className="item" style={{'--position': '4'}}><img src={typescript} alt="Typescript" /></div>
+          <div className="item" style={{'--position': '5'}}><img src={reactjs} alt="react js" /></div>
+          <div className="item" style={{'--position': '6'}}><img src={reduxjs} alt="redux js" /></div>
+          <div className="item" style={{'--position': '7'}}><img src={tailwindcss} alt="Tailwind CSS" /></div>
+          <div className="item" style={{'--position': '8'}}><img src={bootstrap} alt="Bootstrap" /></div>
+          <div className="item" style={{'--position': '9'}}><img src={python} alt="Python" /></div>
+          <div className="item" style={{'--position': '10'}}><img src={django} alt="Django" /></div>
+          <div className="item" style={{'--position': '11', backgroundColor: '#fff', padding: '2px'}}><img src={restframework} alt="Django Rest Framework" /></div>
+          <div className="item" style={{'--position': '12'}}><img src={sql} alt="SQL" /></div>
+          <div className="item" style={{'--position': '13'}}><img src={postgresql} alt="Postgra SQL" /></div>
+          <div className="item" style={{'--position': '14'}}><img src={redis} alt="Redis" /></div>
+          <div className="item" style={{'--position': '15', backgroundColor: '#fff', padding: '2px'}}><img src={git} alt="Git" /></div>
+          <div className="item" style={{'--position': '16', backgroundColor: '#fff', padding: '2px'}}><img src={github} alt="GitHub" /></div>
+          <div className="item" style={{'--position': '17', backgroundColor: '#fff', padding: '2px'}}><img src={npm} alt="npm" /></div>
         </div>
-        
-        
-        <div className="skill-category">
-          <img className="skill-category-img" src={backend} alt="Image depicting logos of backend technologies" />
-          <div className="skill-category-details">
-            <h4>Backend Technologies</h4>
-            <ul>
-              <li>Python</li>
-              <li>Django</li>
-              <li>SQL</li>
-              <li>PostgreSQL</li>
-              <li>Redis</li>
-            </ul>
-          </div>
-        </div>
-        
-        
-        <div className="skill-category">
-          <img className="skill-category-img" src={github} alt="Image depicting logos of version control technologies" />
-          <div className="skill-category-details">
-            <h4>Version Control & Collaboration</h4>
-            <ul>
-              <li>Git</li>
-              <li>GitHub</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div className="skill-category">
-          <img className="skill-category-img" src={restApi} alt="Image depicting logos of API development technologies" />
-          <div className="skill-category-details">
-            <h4>API Development</h4>
-            <ul>
-              <li>Django Rest Framework</li>
-              <li>RestAPI</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div className="skill-category">
-          <img className="skill-category-img" src={restApi} alt="Image depicting logos of API development technologies" />
-          <div className="skill-category-details">
-            <h4>Other</h4>
-            <ul>
-              <li>npm</li>
-              <li>vs code</li>
-              <li>Vite</li>
-              <li>Parcel</li>
-            </ul>
-          </div>
-        </div>
-        
-      </div> */}
-
+      </div>
     </section>
   )
 }

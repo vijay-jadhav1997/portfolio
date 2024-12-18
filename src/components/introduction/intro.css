@@ -1,8 +1,9 @@
 .intro {
-  min-height: calc(100vh - 4rem);
+  min-height: 100vh;
   width: 100%;
   max-width: 80rem;
   margin: 0 auto;
+  padding-top: 4rem;
   overflow: hidden;
   position: relative;
   background-color: #062f5e3c;
@@ -11,16 +12,16 @@
 .bg-img {
   position: absolute;
   z-index: -1;
-  top: -2rem;
+  top: 4rem;
   right: 0;
   height: calc(100vh - 4rem);
   object-fit: cover;
 }
 
 .intro-details {
-  /* min-height: 100vh; */
+  min-height: calc(100vh - 4rem);
   /* width: 100%; */
-  padding: 7rem 2rem 2rem;
+  padding: 2rem;
   font-size: 3rem;
   font-weight: 700;
   display: flex;
@@ -123,7 +124,7 @@
 }
   
   
-.social-medias .button span{
+.social-medias .button span {
   font-size: 1.25rem;
   margin-left: 10px;
 }
@@ -162,14 +163,10 @@
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   color: #dffe88;
-  /* color: #6dcac4; */
-  /* color: #d5f6fa; */
   position: absolute;
   bottom: 5rem;
   left: 50%;
   transform: translateX(-50%);
-  /* text-decoration: 2px underline; */
-  /* text-underline-offset: 6px; */
   cursor: pointer;
 }
 
@@ -195,7 +192,6 @@
 
 
 
-
 @media screen and (max-width:768px) {
   .bg-img {
     right: -10%;
@@ -203,6 +199,9 @@
 }
   
 @media screen and (max-width:640px) {
+  .bg-img {
+    top: -1rem;
+  }
   .intro-text {
     font-size: 2.75rem;
   }
@@ -238,21 +237,30 @@
   .social-medias .button:hover {
     width: 135px;
   }
+
+  .latest-work-link {
+    bottom: 6rem;
+  }
+  
 }
 
 
 @media screen and (max-width:500px) {
-  .bg-img {
-    top: -2rem;
+  #intro {
+    padding-top: 2rem;
   }
-
-  .intro-details {
-    padding: 5rem 1rem 2rem;
+  
+  .bg-img {
+    top: -1rem;
   }
   
   .hello {
     font-size: 1.5rem;
     line-height: 2.25rem;
+  }
+  
+  .intro-details {
+    padding: 2rem 1rem;
   }
   
   .intro-name {
@@ -271,9 +279,9 @@
     margin-bottom: 0.5rem;
   }
 
-  .latest-work-link {
-    bottom: 2.5rem;
-  }
+  /* .latest-work-link {
+    bottom: 6rem;
+  } */
   
 }
 
@@ -283,7 +291,7 @@
     right: -25vw;
   }
   .intro-details {
-    padding: 5rem 1rem 2rem;
+    padding: 0rem 1rem 2rem;
     font-size: 2rem;
   }
 
@@ -303,11 +311,17 @@
 }
 
 @media screen and (max-width:376px) {
+
+  #intro {
+    padding-top: 0;
+  }
+
   .bg-img {
     right: -25%;
   }
+  
   .intro-details {
-    padding: 9rem 0.75rem 2rem;
+    padding: 0rem 0.75rem 2rem;
   }
   .hello {
     font-size: 22px;

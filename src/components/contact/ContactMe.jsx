@@ -10,7 +10,7 @@ function ContactMe() {
       <div className="contact-img-wrapper">
         <img src={contact} alt="Contact" />
       </div>
-      <form className="form-wrapper" action="/" method="post">
+      <form className="form-wrapper" name='contactUS'>
         <div className="input-box">
           <label htmlFor="name">Name:</label> <br />
           <FaUser className='icon' />
@@ -25,7 +25,7 @@ function ContactMe() {
         
         <div className="input-box">
           <label htmlFor="message">Message:</label> <br />
-          <textarea id="message" name="" type="text" ></textarea>
+          <textarea id="message" name="message" type="text" ></textarea>
         </div>
 
         <button className="submit-btn">

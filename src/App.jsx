@@ -4,7 +4,7 @@ import Skills from './components/skills/Skills'
 
 import './App.css'
 import ContactMe from './components/contact/ContactMe'
-// import Projects from './components/projects/Projects'
+import Projects from './components/projects/Projects'
 import Footer from './components/footer/Footer'
 
 
@@ -14,7 +14,7 @@ function App() {
     <div className='app'>
       <Header />
       <Intro />
-      {/* <Projects /> */}
+      <Projects />
       <Skills />
       <ContactMe />
       <Footer />
