@@ -63,7 +63,7 @@ function Intro() {
       </div>
       <img className='bg-img' src={profImg} alt="Profile background Image" />
 
-      <Link className='latest-work-link' to='projects' spy={true} smooth={true} offset={-90} duration={700}>
+      <Link className='latest-work-link' to='projects' spy={true} smooth={true} offset={-60} duration={700}>
         <div className="pointer">
           Latest Work
           <FaArrowDownLong className='arrow' />

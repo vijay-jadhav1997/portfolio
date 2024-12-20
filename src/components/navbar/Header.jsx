@@ -11,6 +11,10 @@ const Header = () => {
 
   function menuHandler() {
     // console.log("!!!...Jay Jay Ram Krushna Hari...!!!");
+    fetch("https://quiz-rest-api.vercel.app/res_api/res_list/")
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(err => console.error(err));
     
     if(!isMenuOpen) {
       // console.log("!!!...Jay Vitthal Shree Vitthal...!!!");

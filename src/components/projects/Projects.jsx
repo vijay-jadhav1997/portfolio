@@ -59,28 +59,29 @@ function Projects() {
        
       </div>
       
-      <div className="project explore-nation left tab">
+      <div className="project track-expenses left tab">
         <div>
           <div className="project-img-wrapper">
-            <span className="tooltip"><span></span><a target='_blank' href="https://explore-nations-indol.vercel.app/">ExploreNation <FaExternalLinkAlt /></a> </span>
-            <img src={explore_nation} alt="Explore Nation" />
+            <span className="tooltip"><span></span><a target='_blank' href="https://track-your-expenses-livid.vercel.app/">Track Expenses <FaExternalLinkAlt /></a> </span>
+            <img src={expenses} alt="Track Expenses" />
           </div>
           <div className="connecting-line"><span></span></div>
         </div>
         <div className="project-intro">
-          <h3 className="project-title"><a target='_blank' href="https://explore-nations-indol.vercel.app/">Explore Nation</a></h3>
-          <a target='_blank' href="https://github.com/vijay-jadhav1997/react-projects/tree/main/explore-nations-project" className="github-link">(Github - explore_nation)</a>
-          <p className="project-details">This React application is designed to display information about all countries in the world. It utilizes a card layout for each country, allowing users to click on a card to view detailed information about that specific country.</p>
+          <h3 className="project-title"><a target='_blank' href="https://track-your-expenses-livid.vercel.app/">Track Your Expenses</a></h3>
+          <a target='_blank' href="https://github.com/vijay-jadhav1997/react-projects/tree/main/track-your-expenses" className="github-link">(Github - track_your_expenses)</a>
+          <p className="project-details">Track Your Expenses is a modern React application designed to help users manage their expenses efficiently. The application supports adding, deleting, updating, and clearing expenses, as well as filtering and sorting by various criteria.</p>
           <ul className='tech-stack'>
             <li>HTML</li>
             <li>CSS</li>
             <li>JS (ES6+)</li>
-            <li>React.js</li>
-            <li>Parcel</li>
+            <li>React</li>
+            <li>vite</li>
           </ul>
         </div>
-      </div>
 
+      </div>
+      
       <div className="project shoe-company right tab">
         <div className="project-intro">
           <h3 className="project-title"><a target='_blank' href="https://tailwind-css-projects.vercel.app/">Shoe Company</a></h3>
@@ -126,29 +127,27 @@ function Projects() {
         </div>
       </div>
 
-      <div className="project track-expenses right tab">
+      <div className="project explore-nation right tab">
         <div className="project-intro">
-          <h3 className="project-title"><a target='_blank' href="https://track-your-expenses-livid.vercel.app/">Track Your Expenses</a></h3>
-          <a target='_blank' href="https://github.com/vijay-jadhav1997/react-projects/tree/main/track-your-expenses" className="github-link">(Github - track_your_expenses)</a>
-          <p className="project-details">Track Your Expenses is a modern React application designed to help users manage their expenses efficiently. The application supports adding, deleting, updating, and clearing expenses, as well as filtering and sorting by various criteria.</p>
+          <h3 className="project-title"><a target='_blank' href="https://explore-nations-indol.vercel.app/">Explore Nation</a></h3>
+          <a target='_blank' href="https://github.com/vijay-jadhav1997/react-projects/tree/main/explore-nations-project" className="github-link">(Github - explore_nation)</a>
+          <p className="project-details">This React application is designed to display information about all countries in the world. It utilizes a card layout for each country, allowing users to click on a card to view detailed information about that specific country.</p>
           <ul className='tech-stack'>
             <li>HTML</li>
             <li>CSS</li>
             <li>JS (ES6+)</li>
-            <li>React</li>
-            <li>vite</li>
+            <li>React.js</li>
+            <li>Parcel</li>
           </ul>
         </div>
-
         <div>
           <div className="project-img-wrapper">
-            <span className="tooltip"><span></span><a target='_blank' href="https://track-your-expenses-livid.vercel.app/">Track Expenses <FaExternalLinkAlt /></a> </span>
-            <img src={expenses} alt="Track Expenses" />
+            <span className="tooltip"><span></span><a target='_blank' href="https://explore-nations-indol.vercel.app/">ExploreNation <FaExternalLinkAlt /></a> </span>
+            <img src={explore_nation} alt="Explore Nation" />
           </div>
           <div className="connecting-line"><span></span></div>
         </div>
       </div>
-
     </section>
   )
 }
